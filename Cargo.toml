@@ -1,0 +1,12 @@
+[package]
+name = "load_balancer"
+version = "0.1.0"
+edition = "2024"
+author = "logintimedout"
+
+
+[dependencies]
+axum = "0.8.9"
+hyper = { version = "1.9.0", features = ["client", "server", "http1"] }
+hyper-util = { version = "0.1.20", features = ["tokio"] }
+tokio = { version = "1.52.3", features = ["net", "rt-multi-thread", "macros"] }
